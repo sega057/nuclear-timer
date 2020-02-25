@@ -1,22 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Counter, CounterLite} from "./counter";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Make Counters Great Again!</h1>
+        <hr/>
+        <CounterLite/>
+        <hr/>
+        <Counter timeout={20} interval={1000}/>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Open application and ruin the world!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.whitehouse.gov/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          White House
         </a>
       </header>
     </div>
